@@ -14,9 +14,15 @@ public class Client {
              PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
              BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
 
-            out.println("bla bla");
-
             String resp = in.readLine();
+            System.out.println(resp);
+            out.println("David");
+
+            resp = in.readLine();
+            System.out.println(resp);
+            out.println("no");
+
+            resp = in.readLine();
             System.out.println(resp);
         }
     }
